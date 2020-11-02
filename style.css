@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+    /* pour donner opacity à l'image  */
+    background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(img/img\ \(1\).jpg); 
+    background-size:cover ;
+    background-repeat: no-repeat;
+    /* pour redimensionner l'image  */
+    height: 30rem; 
+    
+}
+/* --------------------le text et l'image au milieu------------- */
+.essenciel {
+    display: flex;
+    /*height: 50%;
+    margin: auto;*/
+    min-height: 110vh; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+}
+.photo img {
+    width: 18vw;
+    filter: none;
+}
+.intro {
+     width: 40%;/* ------------était changé*/
+    margin-left: -20px;
+}
+.nom {
+    color: #184059;
+    line-height: 20px;
+}
+.nom h1 {
+    font-size: 52px;
+    margin: 15px 0px;
+}
+.important {
+    display: flex;
+}
+.objectif{
+    background-color:rgba(94, 139, 166, 0.5);
+    color: #FFF;
+    line-height: 18px;
+    padding: 5px 10px 20px 10px;
+    width: 20rem ;/* ------------était changé*/
+}
+.objectif h2 {
+    font-size: 36px;
+    line-height: 30px;
+}
+.contact  {
+    list-style: none;
+    color: #BF7B3F;
+    margin: 10px;
+    padding: 0px;
+    font-size: 35px;
+}
+/* -------------------------------------------- */
+.cvElements {
+    display: flex;
+    justify-content: space-around;
+    margin:15vh  auto ;
+    width: 80%;
+}
+.cvElements li {
+    list-style: none;
+    background-color: #8C2F1B;
+    padding: 1rem;
+}
+.cvElements li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #FFF;
+}
+.marginBottom {
+    margin-bottom: auto;
+}
+.cvElements #competences {
+    margin-top: 18px;
+}
+.cvElements #formations {
+    margin-top: 35px;
+}
+/* ----------------------menu deroulant-------------------- */
+.sousMenu {
+    display: flex;
+}
+.subMenu{
+    margin: 0px;
+    padding: 0px;
+}
+.subMenu li {
+    display: inline;
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px;
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header{
+    background-color: rgba(215, 215, 217,0.5);
+    margin: 0px;
+    padding: 0px;
+    height: 5rem;
+}
+h1{
+    font-size: 40px;
+    margin: 0px;
+}
+h1 a {
+padding: 10px 40px;
+text-decoration: none;
+color: #184059;
+font-size: 40px;
+}
+main {
+    display: flex;
+    
+}
+section {
+    flex: 1;
+    padding-left:2rem;
+}
+a{
+    text-decoration: none;
+}
+section a h2 {
+    color:  rgba(0, 0, 0,0.2);
+}
+section a h3 {
+    color:  rgba(0, 0, 0,0.2);
+}
+section a h3 strong{
+    color:  rgba(0, 0, 0,0.2);
+}
+section a ul li {
+    color:  rgba(0, 0, 0,0.2);
+}
+section a h4 {
+    color: rgba(0, 0, 0,0.2);
+}
+section.active a h2 {
+    color: #8C2F1B;
+}
+section.active a h3 {
+    color: #184059;
+}
+section.active a  h3 strong{
+    color: #5D8AA6;
+}
+section.active a ul li {
+    color: #000;
+}
+section.active a h4 {
+    color: #000;
+}
+/* --------------contact---- */
+.contact  {
+    list-style: none;
+    color: #BF7B3F;
+    margin: 10px;
+    padding: 0px;
+    font-size: 35px;
+}
