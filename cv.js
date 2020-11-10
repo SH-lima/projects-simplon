@@ -1,7 +1,13 @@
 
+// $(document).on('load', '#competences', function(){
+//     console.log('page charge'); 
+//     $(this).addClass('active').siblings().removeClass('active')
+// })
+
 $(document).on('click', 'section', function(){
     $(this).addClass('active').siblings().removeClass('active')
 })
+
 // ------------------------------------------
 const sr=ScrollReveal( {
     

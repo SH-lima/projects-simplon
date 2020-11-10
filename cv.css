@@ -47,7 +47,8 @@ section a ul li {
 section a h4 {
     color: rgba(0, 0, 0,0.2);
 }
-section.active a h2 {
+/* ------------mode active------- */
+ section.active h2 {    /*--------------- était changé */
     color: #8C2F1B;
 }
 section.active a h3 {
@@ -69,4 +70,44 @@ section.active a h4 {
     margin: 10px;
     padding: 0px;
     font-size: 35px;
+}
+/* ----------pseudo elements----- */
+.phone:hover::before {
+    content: '0700000000';
+
+}
+.mail:hover::before {
+    content: 'aymenmedkour81@gmail.com';
+
+}
+.adress:hover::before {
+    content: '11 boulevard Albin Bandini 13016 Marseille';
+
+}
+.style {
+    position: relative;
+}
+.style:hover:before {
+    position: absolute;
+    z-index: 100;
+    right: 200%;
+    font-size: 20px;
+    background-color: rgba(191, 123, 63, 0.8);
+    color: #fff;
+    margin:5px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+@media screen and (max-width:800px){
+    main{
+        display: block;
+        position: relative;
+    }
+    .contact{
+        display: block;
+        position: absolute;
+        top:-7%;
+        left: 90%;
+    }
 }

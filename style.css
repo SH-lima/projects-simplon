@@ -12,24 +12,21 @@ header {
     background-repeat: no-repeat;
     /* pour redimensionner l'image  */
     height: 30rem; 
-    
 }
 /* --------------------le text et l'image au milieu------------- */
 .essenciel {
     display: flex;
-    /*height: 50%;
-    margin: auto;*/
     min-height: 110vh; 
     align-items: center;
     justify-content: center;
-    margin-left: 5vw;
+    margin-left: 20vw;
 }
 .photo img {
     width: 18vw;
     filter: none;
 }
 .intro {
-     width: 40%;/* ------------était changé*/
+     width: 80%;/* ------------était changé*/
     margin-left: -20px;
 }
 .nom {
@@ -37,7 +34,7 @@ header {
     line-height: 20px;
 }
 .nom h1 {
-    font-size: 52px;
+    font-size:5vw;
     margin: 15px 0px;
 }
 .important {
@@ -48,10 +45,10 @@ header {
     color: #FFF;
     line-height: 18px;
     padding: 5px 10px 20px 10px;
-    width: 20rem ;/* ------------était changé*/
+    width: 30vw ;/* ------------était changé*/
 }
 .objectif h2 {
-    font-size: 36px;
+    font-size:1.5em;
     line-height: 30px;
 }
 .contact  {
@@ -61,21 +58,23 @@ header {
     padding: 0px;
     font-size: 35px;
 }
-/* -------------------------------------------- */
+/* -----------------------cv elements--------------------- */
 .cvElements {
     display: flex;
     justify-content: space-around;
-    margin:15vh  auto ;
+    margin:15vh  auto 5vh;
     width: 80%;
 }
 .cvElements li {
     list-style: none;
     background-color: #8C2F1B;
     padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
 .cvElements li a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2vw;
     color: #FFF;
 }
 .marginBottom {
@@ -87,17 +86,104 @@ header {
 .cvElements #formations {
     margin-top: 35px;
 }
-/* ----------------------menu deroulant-------------------- */
-.sousMenu {
-    display: flex;
+/* ----------------------pseudo elements-------------------- */
+
+.phone:hover::after {
+    content: '07 00 00 00 00';
+
 }
-.subMenu{
-    margin: 0px;
-    padding: 0px;
+.mail:hover::after {
+    content: 'aymenmedkour81@gmail.com';
+
 }
-.subMenu li {
-    display: inline;
-    list-style: none;
-    margin: 0px;
-    padding: 0px 0px;
+.adress:hover::after {
+    content: '11 boulevard Albin Bandini 13016 Marseille';
+
+}
+.style:hover:after {
+    position: absolute;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #bf7b3f;
+    margin:10px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+/* -----------mode resposive------------ */
+@media screen and (max-width:600px){
+    header{
+        height: 50vh;
+        width: 100vw;
+        display: block ;
+        background-image: none;
+    }
+    .essenciel {
+        display:inline-block;
+        position: relative;
+        margin-left:0px;
+        margin-right: 0;
+        width:100vw;
+    }
+    .photo {
+        display: inline-block;
+        position: relative;
+        top: 0%;
+        left: 10%;
+    }
+    .nom {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        margin: 0px;
+    }
+    .nom h1 {
+        font-size: 1.5em;
+    }
+    .important {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(94, 139, 166, 0.5);
+    }
+    .intro {
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+    .objectif{
+        background-color: transparent;
+        width:25em;
+    }
+    .objectif h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    p {
+        width:15em;
+        margin: auto;
+    }
+    .cvElements {
+        display: flex;
+        flex-direction: column;
+        margin:1vh auto;
+        width: 80%;
+
+    }
+    .marginBottom{
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+    .cvElements li a {
+        font-size: 1em;
+        text-align: center;  
+    }
+    .cvElements #competences {
+        margin-top: 0;
+    }
+    .cvElements #formations {
+        margin-top: 0;
+}
+    /* .style:hover:after {
+        display: none;
+    } */
 }
